@@ -1,18 +1,18 @@
 Welcome To Git & GitHub Repository!
 
->>Install Git:
+>>INSTALL GIT:
 SOURCE PAGE: https://git-scm.com/download/win
 >Click on: "Click here to download"
 >Using the default setting Install the Git
 >Open CMD and type "git" and if you get a list of text, you have successfully installed Git on your machine!!!
 
->>Config Git:
+>>CONFIG GIT:
 Open CMD and type the below commands
 "git config -- global user.name "user_name" press ENTER
 "git config -- global user.email "user_email" press ENTER
 "NOTE: user_name is GitHub id and user_email is GitHub email id"
 
->>VS Code Config
+>>VS CODE CONFIG
 >Create a file and open it in VS
 >Open GitHub and Copy Your repository code "HTTPS"
 >Open a new terminal on VS and type: "git clone "URL COPIED"
