@@ -10,7 +10,7 @@ SOURCE PAGE: https://git-scm.com/download/win
 Open CMD and type the below commands
 "git config -- global user.name "user_name" press ENTER
 "git config -- global user.email "user_email" press ENTER
-"NOTE: user_name is GitHub id and user_email is github email id"
+"NOTE: user_name is GitHub id and user_email is GitHub email id"
 
 >>VS Code Config
 >Create a file and open it in VS
@@ -18,4 +18,59 @@ Open CMD and type the below commands
 >Open a new terminal on VS and type: "git clone "URL COPIED"
 >Now type cd "repository name" to move into the repository to work on it.
 
-#Now you have configured Git & Github
+#Now you have configured Git & GitHub
+
+>>CREATING A FILE IN LOCAL AND UPDATING IT TO GITHUB
+>When you create a file locally the file will be marked as "U" generally and it means "Untracked"
+>In terminal type: git status [To know file status]
+>Add Command: git add file_name [To Add the file to staging, which means the file is sent to local Git]
+>Commit Command: git commit -m "Created a File" [Local Git is committed]
+>Push Command: git push origin main [main is branch name]
+NOTE: The first time when you configure, you will be prompted to the login page and you need to log in and give access.
+
+>>CREATING A FILE IN GITHUB AND UPDATING IT IN LOCAL
+>Create or Modify Files in GitHub 
+>Now in VS Code Type Command: git pull [pulls the updated content from GitHub to local]
+
+>>TO GO TO THE PREVIOUS DIRECTORY
+>Command: cd .. [cd space dot & dot]
+
+>>INITILIZE EMPTY REPOSITORY
+>Command: git init [Create .git file inside a not initialized folder and it is required to push a Folder to GitHub]
+
+>>TO ADD ALL FILES
+>Command: git add . [This command adds all the files in that folder]
+
+>>TO SEND LOCAL FOLDER TO SERVER
+>Create a folder name the same as the local one on GitHub and copy the HTTPS link
+>Command: git remote add origin "URL"
+
+>>TO KNOW BRANCH
+>Command: git branch
+
+>>TO CHANGE BRANCH
+>Command: git branch -M main [main is the destination branch]
+
+>>TO PUSH
+>Command: git push origin main
+
+>>TO KNOW AVAILABLE BRANCHES
+>Command: git branch -a
+
+>>TO CREATE A BRANCH ON GITHUB
+>Click main on GitHub ->Type a new name ->Click Branches -> Create Branch Name
+
+>>TO SWITCH TO ANOTHER BRANCH
+>Command: git checkout branchname
+
+>>TO KNOW DIFFERENCE BETWEEN TWO BRANCHES
+>Command: git diff branchname
+
+>>TO MERGE
+>Command: git merge branchname
+>Command: git push origin main [main is current branch]
+
+NOTE: If you are stuck in between ":" then type "Q" 
+
+>>PULL REQUEST
+>It is used to send requests to the owner of the repository to commit changes to the main branch
